@@ -90,7 +90,7 @@ This is my about me section. <b>This is how you bold</b>. This is how you refere
                 <h3 id="title" class="wow animated fadeIn title">Talent Matching using fastText and NLP</h3>
                 <h5 id="tagline" class="wow animated fadeInUp">Developing a Talent Management System for Redhorse Corporation</h5>
                 <br>
-                <p id="content" class="wow animated fadeInUp">(2017-Present) - Redhorse (RH) Corporation is an integrated solutions provider with expertise in areas such as energy, I.T., and intelligence. Alike many dynamic corporations, identifying both internal and external top-tier talent is an ongoing and everchanging task for RH. During my time as a Junior Data Scientist with the company, I helped develop their proprietary Talent Management System (TMS). Of course, I cannot go into specifics; however, during my time there I began to craft a framework to perform on-the-fly talent matching to arbitrary project descriptions. This framework leverages the recently developed fastText library by Facebook AI Research (FAIR) team.
+                <p id="content" class="wow animated fadeInUp">(2017-Present) - Redhorse (RH) Corporation is an integrated solutions provider with expertise in areas such as energy, I.T., and intelligence. Alike many dynamic corporations, identifying both internal and external top-tier talent is an ongoing and everchanging task for RH. During my time as a Junior Data Scientist with the company, I helped develop their proprietary Talent Management System (TMS). Of course, I cannot go into specifics; however, during my time there I began to craft a framework to perform on-the-fly talent matching to arbitrary project descriptions. This framework leverages the recently developed fastText library by the Facebook AI Research (FAIR) team.
                     <br>
                     <center><img src="img/fastText.jpg" width="50%"></center>                                       
                     <br> FAIR’s fastText library is for efficient learning of word representations and sentence classification through Continuous Bag-of-Words and Continuous Skip-grams. In essence, words are mapped to vectors such that, given a distance metric, words closer together are closer in semantic meaning. Generally, such a model conducts text classification (with a pre-defined set of categories) through simple linear models where averaged word representations or features are said to be representative of a document.
@@ -108,15 +108,24 @@ This is my about me section. <b>This is how you bold</b>. This is how you refere
         </div>
         <div id="kddcup">
             <div class="container">
-                <h3 id="title" class="wow animated fadeIn title">KDD Cup 2017</h3>
-                <h5 id="tagline" class="wow animated fadeInUp">Data Mining and Knowledge Discovery competition organized by ACM </h5>
+                <h3 id="title" class="wow animated fadeIn title">Knowledge Discovery and Data Mining (KDD) Cup 2017</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">Highway Tollgates Traffic Flow Prediction</h5>
                 <br>
-                <p id="content" class="wow animated fadeInUp">(2016-2017) - A description on the project I did for the kdd cup.
+                <p id="content" class="wow animated fadeInUp">(2016-2017) - Highway tolls generate revenue to support the construction and long term maintenance of public
+roadways. While tollbooths are necessary, their limited capacity can create major traffic pinch points,
+especially so in densely populated urban transit networks. Understanding how car volume changes
+through these gates and the underlying factors responsible for the change can assist transit authorities
+in better handling high volume events and guided them toward needed precautionary or auxiliary
+measures. This was the premise of the 2017 KDD Cup organized by Alibaba Cloud. 
+
                     <br>
-                    <center><img src="img/chart.png" width="50%"></center>
-                    <br>This is some words after the picture above.
+                    <br> Two colleague data scientists and myself set-off to tackle one of two sub-competitions of the cup; namely Traffic Volume Prediction. Given a route, direction, and tollgate triplet, the task was to predict the number of vehicles passing through within a series of 20-minute time intervals throughout a three-month period. Only data from previous time-intervals can be used to estimate any given time-interval.
                     <br>
-                    <br><a class="btn black" href="https://drive.google.com/open?id=0B-WUfO-kzCSZUzZQQ0dINUc5MDg">Write-up</a> <a href="http://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction" class="btn black">Competition Description</a></p>
+                                                             <center><img src="img/kdd_evaluation.png" width="50%"></center>
+                    <br>
+                    <br>We converted the volumes into a 20-minute time series through time-series segmentation via various sliding windows. The group tested several different Machine Learning algorithms to minimize Mean Absolute Percentage Error (MAPE). Algorithms tried included: SVM, Linear Regression, Random Forest and ANNs supported by various pre-processing techniques such as K-Means clustering. In addition, we utilized different types of meta-learning techniques such as Stacking and Bagging.
+                    <br>
+                    <br><a class="btn black" href="https://drive.google.com/open?id=0B-WUfO-kzCSZUUJoemVRSVhOTGs">Write-up</a> <a href="http://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction" class="btn black">Competition Description</a></p>
             </div>
         </div>
                 <div id="wpi">
