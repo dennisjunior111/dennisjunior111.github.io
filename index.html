@@ -87,11 +87,17 @@ This is my about me section. <b>This is how you bold</b>. This is how you refere
         </div>
         <div id="TMS">
             <div class="container">
-                <h3 id="title" class="wow animated fadeIn title">Talent Management System (TMS)</h3>
-                <h5 id="tagline" class="wow animated fadeInUp">Machine Learning for TMS - Redhorse Corporation</h5>
+                <h3 id="title" class="wow animated fadeIn title">Talent Matching using FAIR's fastText and NLP</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">Developing a Talent Management System for Redhorse Corporation</h5>
                 <br>
-                <p id="content" class="wow animated fadeInUp">(2017-Present) - Description about my work at Redhorse.
+                <p id="content" class="wow animated fadeInUp">(2017-Present) -Redhorse (RH) Corporation is an integrated solutions provider with expertise in areas such as energy, I.T., and intelligence. Alike many dynamic corporations, identifying both internal and external top-tier talent is an ongoing and everchanging task for RH. During my time as a Junior Data Scientist with the company, I helped develop their proprietary Talent Management System (TMS). Of course, I cannot go into specifics; however, during my time there I began to craft a framework to perform on-the-fly talent matching to arbitrary project descriptions. This framework leverages the recently developed fastText library by Facebook AI Research (FAIR) team.
                     <br>
+                    <center><img src="img/fastText.jpg" width="50%"></center>                                       
+                    <br> FAIR’s fastText library is for efficient learning of word representations and sentence classification through Continuous Bag-of-Words and Continuous Skip-grams. In essence, words are mapped to vectors such that, given a distance metric, words closer together are closer in semantic meaning. Generally, such a model conducts text classification (with a pre-defined set of categories) through simple linear models where averaged word representations or features are said to be representative of a document.
+                    <br> I purpose two changes to this text classification method. One, when building features to represent a document, simply averaging word representations does not necessarily capture the ‘essence’ of a document. Other functions can be created that better fuse words, and take data such as TF-IDF into account as well. Two, text classification with pre-defined categories is lackluster when documents are required to be placed into dynamic groups. In RH’s case, new project descriptions (PDs) are generated daily by various clients. It is up to RH to identify talent that can fulfill these PDs quickly and efficiently.                                              
+                    <br> One can handle this task by converting a PD into a series of vectors representative of the described skills, taking a corpus of word embeddings representative of various talent’s documents (resumes, CVs, profiles, etc.), and computing the distances between various talents and PD representations. This forgoes semi-static classification techniques in favor of unique comparisons to be made by each new PD. fastText is not only a fast and efficient method to generate these word embeddings for a company’s needs, but FAIR recently released pre-trained word vector models for 294 languages trained using Deep ANNs over Wikipedia! 
+                    <br> Currently I am familiarizing myself with the open-source ML TensorFlow library in Python in order to conduct transfer learning more efficiently of FAIR’s pre-trained models to more domains. Once I am confident, I hope to continue my personal work to develop my own talent matching system.                                                
+                    <br> Continue to check back for updates!
                     <br><a class="btn black" href="https://www.redhorsecorp.com/">Redhorse Corporation</a> <a class="btn black" href="https://github.com/facebookresearch/fastText">fastText</a></p>
             </div>
         </div>
@@ -154,7 +160,7 @@ This is my about me section. <b>This is how you bold</b>. This is how you refere
             
              <div class="container">
                 <h3 id="title" class="wow animated fadeIn title">Resource Competition Amid Overlapping Territories: The Territorial Raider Model Applied to Multi-Group Interactions</h3>
-                <h5 id="tagline" class="wow animated fadeInUp">Journal - Journal of Theoretical Biology</h5>
+                <h5 id="tagline" class="wow animated fadeInUp">Journal of Theoretical Biology</h5>
                  <br>
                 <p id="content" class="wow animated fadeInUp">(2015) - Abstract: Many organisms maintain collective territories and compete on behalf of the fitness of the overall group.
 Inspired by this concept, the territorial raider model is a graph-based resource competition in which
@@ -171,7 +177,7 @@ discrete units are employed, multiple strategies emerge. <br />
             
             <div class="container">
                 <h3 id="title" class="wow animated fadeIn title">The Territorial Raider Game and Graph Derangements</h3>
-                <h5 id="tagline" class="wow animated fadeInUp">Journal - Discrete Applied Mathematics</h5>
+                <h5 id="tagline" class="wow animated fadeInUp">Journal of Discrete Applied Mathematics</h5>
                     <br>
                 <p id="content" class="wow animated fadeInUp">(2015) - Abstract: A derangement of a graph G = (V, E) is an injective function f : V → V such that for
 all v ∈ V, f(v) ̸= v and (v, f(v)) ∈ E. Not all graphs admit a derangement and previous
