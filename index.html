@@ -178,7 +178,7 @@ measures. This was the premise of the 2017 KDD Cup organized by Alibaba Cloud.
                     <br> Two colleague data scientists and myself set-off to tackle one of two sub-competitions of the cup; namely Traffic Volume Prediction. Given a route, direction, and tollgate triplet, the task was to predict the number of vehicles passing through within a series of 20-minute time intervals throughout a three-month period. Only data from previous time-intervals can be used to estimate any given time-interval.
                     <br>
                                                              <br>
-                                                             <center><img src="img/kdd_evaluation.png" width="100%"></center>
+                                                             <center><img src="img/kdd_evaluation.png" width="80%"></center>
                     <br>
                     <br>We converted the volumes into a 20-minute time series through time-series segmentation via various sliding windows. The group tested several different Machine Learning algorithms to minimize Mean Absolute Percentage Error (MAPE). Algorithms tried included: SVM, Linear Regression, Random Forest and ANNs supported by various pre-processing techniques such as K-Means clustering. In addition, we utilized different types of meta-learning techniques such as Stacking and Bagging.
                     <br>
@@ -190,10 +190,14 @@ measures. This was the premise of the 2017 KDD Cup organized by Alibaba Cloud.
                 <h3 id="title" class="wow animated fadeIn title">Major Qualifying Project (MQP)</h3>
                 <h5 id="tagline" class="wow animated fadeInUp">Machine Learning Applications and Movie Recommendation System</h5>
                 <br>
-                <p id="content" class="wow animated fadeInUp">(2016) - All things about my mqp.
+                <p id="content" class="wow animated fadeInUp">(2016) - Today we live in the big data age. Due to the increasing use of web and cloud based services, as well as advances in computer and sensor technology, a wealth of new data is being gathered throughout academia, business, and the government. My Major Qualifying Project (MQP) titled Machine Learning Applications was written to both explore the various ways Machine Learning (ML) is used to process this big data, and develop, from scratch, my own ML application. 
+                <br>
+While completing my undergraduate degree in the Mathematical Sciences, I became intrigued by statistical and linear algebra based methods for dimensionality reduction on large datasets. Principal Component Analysis (PCA) thus became the foundation for my MQP. PCA is one feature extraction method that derives a low-dimensional uncorrelated set of features from a large set of correlated variables. If used correctly, PCA can significantly reduce the dimensionality, and therefore memory, while retaining nearly all of the variance of a dataset!
                     <br>
                     <center><img src="img/HAN.png" width="30%" height="10%"></center>
-                    <br> Even more things about my mqp!
+                    <br> In recent history, several organizations have been utilizing dimensionality techniques to store, access, and analyze their collected data more efficiently and with increased speed. I researched companies from Google and their AdWords platform to The National Center for Biotechnology Information and their GenBank work. The application that I wanted to ‘mimic’ from the ground up, however, was that of Netflix’s movie recommendation system. Thus, I created my own small scale recommendation system in MATLAB tested over movie rating datasets ranging from 100K to 1M ratings from the MovieLens repository.
+                    <br>
+For those with a more mathematical background, I conducted PCA through performing Singular Value Decomposition (SVD) on the covariance matrix of a pre-processed and normalized ratings matrix. I then conducted collaborative and content-based filtering via Pearson correlation between users and items respectively. In short, I reduced 100K-1M viewer’s preferences into a few dozen specific or sudo movie ratings that, when combined, can represent any given user’s preference. I then can predict the rating a new user would give to a movie they have not seen before by looking at seeing how the new user’s previous preferences relate to other viewer’s preferences who had seen the movie (i.e. the few dozen sudo movie ratings per movie).
                     <br>
                     <br><a class="btn black" href="https://web.wpi.edu/Pubs/E-project/Available/E-project-032216-131654/unrestricted/MQP_Dennis_Final.pdf">Write-up</a></p>
             </div>
